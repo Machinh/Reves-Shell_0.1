@@ -1,7 +1,7 @@
 <?php
 
 //access https://github.com/Macchimne for more repositories
-//CREDITS: pentestmonkey
+//CREDITS: pentestmonkey, her is the best :)
 
 //change the ip and port of the code to be able to use
 
